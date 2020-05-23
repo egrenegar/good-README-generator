@@ -1,10 +1,9 @@
-function generateMarkdown(data) {
+function generateMarkdown(answers) {
   return `
-# ${data.title}
+# ${answers.title}
 
 ## Description
-${data.description}
-
+${answers.description}
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,23 +14,23 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation
-${data.installation}
+${answers.installation}
 
 ## Usage
-${data.usage}
+${answers.usage}
 
 ## License
 ![](https://img.shields.io/badge/LICENSE-MIT-<ORANGE>)
 
 ## Contributing
-${data.contributing}
+${answers.contributing}
 
 ## Tests
-${data.tests}
+${answers.tests}
 
 ## Questions
 * Profile picture from GitHub
-* ${data.email}
+* ${answers.email}
 `;
 }
 
