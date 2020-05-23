@@ -20,7 +20,7 @@ ${answers.installation}
 ${answers.usage}
 
 ## License
-![](https://img.shields.io/badge/LICENSE-MIT-<ORANGE>)
+![](https://img.shields.io/badge/LICENSE-${answers.license}-<ORANGE>)
 
 ## Contributing
 ${answers.contributing}
@@ -29,7 +29,6 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-* Profile picture from GitHub
 * ${answers.email}
 `;
 }

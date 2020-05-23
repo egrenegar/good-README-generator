@@ -2,16 +2,6 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-const questions = [
-
-
-];
-
-// function writeToFile(fileName, data) {
-
-// }
-
-
 function init() {
     inquirer
     .prompt([
@@ -67,31 +57,17 @@ function init() {
         }
     ])
 
-        // .then(function (answers) {
-        //     fs.writeFile("answers.text", JSON.stringify(answers, null, "\t"), function (err) {
-
-        //         if (err) {
-        //             return console.log(err);
-        //         }
-
-        //         console.log("Success!");
-
-        //     });
-        // });
-
     .then(function (answers) {
-        fs.writeFile("NEWREADME.md", generateMarkdown(answers), function (err) {
+        fs.writeFile("README.md", generateMarkdown(answers), function (err) {
 
             if (err) {
                 return console.log(err);
             }
-            console.log("Success!");
+            console.log("README generated successfully!");
 
         });
     });
 }
-
-
 
 
 init()
